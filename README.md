@@ -94,10 +94,3 @@ Decrypted : Hello World
 The Caesar cipher has only 25 possible keys, making it trivially breakable by brute force or frequency analysis. It is a learning tool, not a production-grade encryption method. Modern systems use AES-256 with keys of 2^256 possible values.
 
 ---
-
-## Project Info
-
-**Batch:** 2026  
-**Organization:** DecodeLabs  
-**Domain:** Cyber Security  
-**Track:** Basic Encryption & Decryption
