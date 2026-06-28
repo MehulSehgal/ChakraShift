@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <header>
+      <div class="badge">🔐 DecodeLabs</div>
+      <h1>Caesar Cipher</h1>
+      <p class="subtitle">Basic Encryption &amp; Decryption — Project 2</p>
+    </header>
+
+    <main>
+      <div class="card">
+        <label for="inputText">Message</label>
+        <textarea id="inputText" rows="4" placeholder="Type your message here..."></textarea>
+
+        <div class="shift-row">
+          <label for="shiftKey">Shift Key</label>
+          <div class="shift-controls">
+            <button id="shiftDown" aria-label="decrease">−</button>
+            <span id="shiftDisplay">3</span>
+            <button id="shiftUp" aria-label="increase">+</button>
+          </div>
+        </div>
+
+        <div class="btn-row">
+          <button id="encryptBtn" class="btn-primary">Encrypt</button>
+          <button id="decryptBtn" class="btn-secondary">Decrypt</button>
+          <button id="clearBtn" class="btn-ghost">Clear</button>
+        </div>
+      </div>
+
+      <div class="results" id="results" style="display:none;">
+        <div class="result-block">
+          <span class="result-label">Encrypted</span>
+          <div class="result-text" id="encryptedOutput"></div>
+          <button class="copy-btn" data-target="encryptedOutput">Copy</button>
+        </div>
+        <div class="result-block">
+          <span class="result-label">Decrypted</span>
+          <div class="result-text" id="decryptedOutput"></div>
+          <button class="copy-btn" data-target="decryptedOutput">Copy</button>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-card">
+          <h3>How It Works</h3>
+          <p>Each letter is shifted by the key value. <strong>A</strong> with shift <strong>3</strong> becomes <strong>D</strong>. Non-letter characters are unchanged.</p>
+        </div>
+        <div class="info-card">
+          <h3>Formula</h3>
+          <p>Encrypt: <code>E(x) = (x + n) % 26</code><br>Decrypt: <code>D(x) = (x − n) % 26</code></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>DecodeLabs · Cyber Security Project 2 · Batch 2026</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
