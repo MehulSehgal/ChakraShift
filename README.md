@@ -1,4 +1,4 @@
-# Caesar Cipher — DecodeLabs Cyber Security Project 2
+# ChakraShift
 
 Basic Encryption & Decryption using the Caesar Cipher, implemented in Python, C, C++, and as a browser-based web app.
 
