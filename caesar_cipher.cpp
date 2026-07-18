@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 std::string encrypt(std::string text, int shift) {
     std::string result = "";
     for (char c : text) {
