@@ -12,11 +12,9 @@ std::string encrypt(std::string text, int shift) {
     }
     return result;
 }
-
 std::string decrypt(std::string text, int shift) {
     return encrypt(text, -shift);
 }
-
 int main() {
     std::string message;
     int shift;
