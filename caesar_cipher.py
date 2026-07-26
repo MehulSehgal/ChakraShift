@@ -8,10 +8,8 @@ def encrypt(text, shift):
             result += char
     return result
 
-
 def decrypt(text, shift):
     return encrypt(text, -shift)
-
 
 def main():
     print("=" * 50)
