@@ -18,7 +18,6 @@ std::string decrypt(std::string text, int shift) {
 int main() {
     std::string message;
     int shift;
-
     std::cout << std::string(50, '=') << std::endl;
     std::cout << "     Caesar Cipher - Encryption & Decryption" << std::endl;
     std::cout << std::string(50, '=') << std::endl;
