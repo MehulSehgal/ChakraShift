@@ -10,7 +10,6 @@ def encrypt(text, shift):
 
 def decrypt(text, shift):
     return encrypt(text, -shift)
-
 def main():
     print("=" * 50)
     print("     Caesar Cipher - Encryption & Decryption")
