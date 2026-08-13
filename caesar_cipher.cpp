@@ -24,7 +24,6 @@ int main() {
 
     std::cout << "\nEnter the message: ";
     std::getline(std::cin, message);
-
     std::cout << "Enter shift key (1-25): ";
     std::cin >> shift;
     std::string encrypted = encrypt(message, shift);
