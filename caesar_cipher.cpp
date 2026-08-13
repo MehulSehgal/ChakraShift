@@ -27,7 +27,6 @@ int main() {
 
     std::cout << "Enter shift key (1-25): ";
     std::cin >> shift;
-
     std::string encrypted = encrypt(message, shift);
     std::string decrypted = decrypt(encrypted, shift);
 
